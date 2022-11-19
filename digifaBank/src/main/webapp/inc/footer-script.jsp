@@ -1,0 +1,9 @@
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/OwlCarousel2Thumbs.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/new.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>

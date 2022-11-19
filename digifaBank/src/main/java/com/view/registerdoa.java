@@ -12,6 +12,7 @@ public class registerdoa {
 	static String url = "jdbc:mysql://localhost:3307/" ;
 	String username ="root";
 	static String password ="root";
+	
 	private static final String Insert_register_query = "insert into register(\r\n"
 			+ "`login_id`,\r\n"
 			+ "`first_name`,\r\n"
@@ -61,31 +62,31 @@ public class registerdoa {
 		try(Connection connection = getConnection(); 
 				PreparedStatement preparestatement = connection.prepareStatement(Insert_register_query)){
 				preparestatement.setInt(1, r.getLogin_id());
-				preparestatement.setString(1, r.getFirst_name());
-				preparestatement.setString(1, r.getLast_name());
-				preparestatement.setString(1, r.getMiddle_name());
-				preparestatement.setString(1, r.getMother_name());
-				preparestatement.setString(1, r.getFather_name());
-				preparestatement.setString(1, r.getDate_of_birth());
-				preparestatement.setString(1, r.getPlace_of_birth());
-				preparestatement.setString(1, r.getGender());
-				preparestatement.setString(1, r.getMarital_status());
-				preparestatement.setString(1, r.getNationality());
-				preparestatement.setString(1, r.getHome_address());
-				preparestatement.setString(1, r.getStreet_address());
-				preparestatement.setString(1, r.getCity());
-				preparestatement.setString(1, r.getState());
-				preparestatement.setString(1, r.getCountry());
-				preparestatement.setInt(1, r.getZipcode());
-				preparestatement.setLong(1, r.getPhone_number());
-				preparestatement.setString(1, r.getEmail());
-				preparestatement.setString(1, r.getAccount_type());
-				preparestatement.setString(1, r.getPan());
-				preparestatement.setString(1, r.getAadhar());
-				preparestatement.setString(1, r.getPhoto());
-				preparestatement.setString(1, r.getSignature());
-				preparestatement.setLong(1, r.getAccount_number());
-				preparestatement.setLong(1, r.getIfsc_code());
+				preparestatement.setString(2, r.getFirst_name());
+				preparestatement.setString(3, r.getLast_name());
+				preparestatement.setString(4, r.getMiddle_name());
+				preparestatement.setString(5, r.getMother_name());
+				preparestatement.setString(6, r.getFather_name());
+				preparestatement.setString(7, r.getDate_of_birth());
+				preparestatement.setString(8, r.getPlace_of_birth());
+				preparestatement.setString(9, r.getGender());
+				preparestatement.setString(10, r.getMarital_status());
+				preparestatement.setString(11, r.getNationality());
+				preparestatement.setString(12, r.getHome_address());
+				preparestatement.setString(13, r.getStreet_address());
+				preparestatement.setString(14, r.getCity());
+				preparestatement.setString(15, r.getState());
+				preparestatement.setString(16, r.getCountry());
+				preparestatement.setInt(17, r.getZipcode());
+				preparestatement.setLong(18, r.getPhone_number());
+				preparestatement.setString(19, r.getEmail());
+				preparestatement.setString(20, r.getAccount_type());
+				preparestatement.setString(21, r.getPan());
+				preparestatement.setString(22, r.getAadhar());
+				preparestatement.setString(23, r.getPhoto());
+				preparestatement.setString(24, r.getSignature());
+				preparestatement.setLong(25, r.getAccount_number());
+				preparestatement.setLong(26, r.getIfsc_code());
 				preparestatement.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -95,7 +96,8 @@ public class registerdoa {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		registerdoa reg = new registerdoa();
+		reg.insertUser(null);
 	}
 
 }

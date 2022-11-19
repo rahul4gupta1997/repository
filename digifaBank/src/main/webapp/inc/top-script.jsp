@@ -1,0 +1,28 @@
+<link 
+	rel="stylesheet" 
+	href="css/bootstrap.min.css"
+	/>
+<link 
+	rel="stylesheet" 
+	href="css/jquery-ui.css"
+	/>
+<link
+	 rel="stylesheet" 
+	 href="css/owl.carousel.min.css"
+	 />
+<link 
+	rel="stylesheet" 
+	href="css/owl.theme.default.min.css"
+	/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+<link 
+	rel="stylesheet" 
+	href="css/style.css"
+	/>
+<link 
+  rel="stylesheet"
+  href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+  />
